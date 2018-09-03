@@ -4,15 +4,24 @@ using namespace std;
 
 int main() {
 	
+	int currVall, vall;
 
-	
-	int firstNum, seconfNum, sum=0;
+	if (cin >> currVall) {
+		int count = 1;
+		while (cin >> vall) {
+			if (currVall == vall) {
+				count++;
+			}
+			else {
 
-	
-	while (cin >> firstNum) {
-		sum += firstNum;
+				cout << currVall << " ocurs " << count << " tims" << endl;
+				currVall = vall;
+				count = 1;
+			}
+			cout << currVall << " ocurs " << count << " tims" << endl;
+		 }
+		
 	}
-	cout << sum;
 	
 	cout << endl;
 	system("pause");
