@@ -3,9 +3,11 @@
 using namespace std;
 
 int main() {
-
-	//clog << "hi";
-	cerr << "Error";
+	
+	int firstNumber = 0, secondNumber = 0;
+	cout << "Input number: ";
+	cin >> firstNumber >> secondNumber;
+	cout << "Sum=" << firstNumber + secondNumber<<endl;
 	system("pause");
 	return 0;
 }
