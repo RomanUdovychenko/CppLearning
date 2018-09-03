@@ -13,14 +13,12 @@ int main() {
 				count++;
 			}
 			else {
-
 				cout << currVall << " ocurs " << count << " tims" << endl;
 				currVall = vall;
 				count = 1;
 			}
-			cout << currVall << " ocurs " << count << " tims" << endl;
 		 }
-		
+		cout << currVall << " ocurs " << count << " tims" << endl;
 	}
 	
 	cout << endl;
