@@ -4,12 +4,17 @@ using namespace std;
 
 int main() {
 	
-	int firstNumber = 0, secondNumber = 0;
-	
-	cout << "The sum of" << firstNumber
-		<< "and" << secondNumber
-	<< "is" << firstNumber + secondNumber << endl;
+	int sum = 0, val = 1;
 
+	while (val<=10)
+	{
+		sum += val;
+		++val;
+	}
+
+	cout << "sum of 10 number= " << sum;
+	
+	cout << endl;
 	system("pause");
 	return 0;
 }
