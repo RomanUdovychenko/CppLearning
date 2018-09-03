@@ -4,15 +4,19 @@ using namespace std;
 
 int main() {
 	
-	int sum = 0, val = 1;
+	int firstNum, seconfNum;
 
-	while (val<=10)
+	cout << "firstNum and second num ";
+	cin >> firstNum >> seconfNum;
+	
+
+	while (firstNum<=seconfNum)
 	{
-		sum += val;
-		++val;
+		cout << firstNum << " ";
+		firstNum++;
 	}
 
-	cout << "sum of 10 number= " << sum;
+	//cout << "sum of 50-100 number= " << sum;
 	
 	cout << endl;
 	system("pause");
