@@ -9,8 +9,8 @@ int main() {
 	int firstNum, seconfNum, sum=0;
 
 	
-	for (int i = -100; i <= 100; i++) {
-		sum += i;
+	while (cin >> firstNum) {
+		sum += firstNum;
 	}
 	cout << sum;
 	
