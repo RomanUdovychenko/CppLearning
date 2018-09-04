@@ -1,14 +1,21 @@
 #include<iostream>
-
+#include<string>
 using namespace std;
+
+string globalSTR;
+int globalInt;
 
 int main() {
 
-	//cin >> int inputValu;//error
-	//int i{ 3.14 };//error
-	int i = 3.14;
+	string localStr;
+	int localInt;
 
-	cout << i;
+	
+	cout << globalSTR;//error
+	//cout << globalSTR;//ok
+	cout << localStr;//error
+	
+	//cout << localInt;//error not init
 
 	cout << endl;
 	system("pause");
