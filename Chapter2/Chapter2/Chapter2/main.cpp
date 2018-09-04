@@ -2,21 +2,15 @@
 #include<string>
 using namespace std;
 
-string globalSTR;
-int globalInt;
 
 int main() {
 
-	string localStr;
-	int localInt;
+	int i = 100, sum = 0;
 
-	
-	cout << globalSTR;//error
-	//cout << globalSTR;//ok
-	cout << localStr;//error
-	
-	//cout << localInt;//error not init
+	for (int i = 0; i != 10; i++)
+		sum += i;
 
+	cout << "i=" << i << ", sum=" << sum;
 	cout << endl;
 	system("pause");
 	return 0;
