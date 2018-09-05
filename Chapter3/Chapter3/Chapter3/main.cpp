@@ -1,22 +1,20 @@
 #include<iostream>
+#include<vector>
 #include<string>
 using namespace std;
 
 int main(){
-	string str;
-	getline(cin, str);
+	
+	int arr[10];
 
-	/*for (auto &i: str) {
-		i = toupper(i);
-	}*/
-
-	for (auto i : str) {
-		cout << i << "-";
+	for (int i = 0; i < 10;i++) {
+		arr[i] = i;
 	}
 
-	cout << str;
-
-	cout << endl;
+	for (int i = 0; i < 10; i++) {
+		cout<<arr[i]<<" ";
+	}
+	
 	system("pause");
 	return 0;
 }
