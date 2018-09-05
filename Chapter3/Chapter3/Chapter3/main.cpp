@@ -3,13 +3,13 @@
 using namespace std;
 
 int main(){
-	string strSum,strCin;
-	
-	while (cin>>strCin)
-	{
-		strSum += strCin+" ";
-		cout << "New Str: " << strSum << endl;
+	string str;
+	getline(cin, str);
+
+	for (auto i: str) {
+		cout << i << "--";
 	}
+	
 
 	system("pause");
 	return 0;
