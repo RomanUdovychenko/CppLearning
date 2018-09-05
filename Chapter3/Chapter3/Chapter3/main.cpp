@@ -6,10 +6,14 @@ int main(){
 	string str;
 	getline(cin, str);
 
-	for (auto &i: str) {
+	/*for (auto &i: str) {
 		i = toupper(i);
+	}*/
+
+	for (auto i : str) {
+		cout << i << "-";
 	}
-	
+
 	cout << str;
 
 	cout << endl;
