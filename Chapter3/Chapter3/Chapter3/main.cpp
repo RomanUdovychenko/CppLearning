@@ -5,7 +5,7 @@ using namespace std;
 int main(){
 	string str;
 
-	while (cin >> str) {
+	while (getline(cin,str) ){
 		cout << str << endl;
 	}
 
