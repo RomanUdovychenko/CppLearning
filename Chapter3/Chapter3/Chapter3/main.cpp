@@ -3,17 +3,31 @@
 using namespace std;
 
 int main(){
-	string str="d";
+	string str1,str2;
+	
+	getline(cin, str1);
+	getline(cin, str2);
+	//size
+	if (str1.size() == str2.size()) {
+		cout << "(size)str1 and str2 ==" << endl;
+	}
+	else if (str1.size() > str2.size()) {
+		cout << "(size)str1>str2" << endl;
+	}
+	else {
+		cout << "(size)str1<str2" << endl;
+	}
+	//not size
+	if (str1 == str2) {
+		cout << "str1 and str2 ==" << endl;
+	}
+	else if (str1 > str2) {
+		cout << "str1>str2" << endl;
+	}
+	else {
+		cout << "str1<str2" << endl;
+	}
 
-	if (str.empty()) {
-		getline(cin, str);
-		cout << "Text: << " << str << " >>" << endl;
-		cout << "Size text: < " << str.size() << " >"<<endl;
-	}
-	else
-	{
-		cout << "STR NOT EMPTY"<<endl;
-	}
 
 	system("pause");
 	return 0;
