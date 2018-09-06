@@ -5,16 +5,13 @@ using namespace std;
 
 int main(){
 	
-	int arr[10];
+	int arr[5] = {1,2,3,4,5};
+	int* ip = arr;
+	int* ip2 = ip + 2;
 
-	for (int i = 0; i < 10;i++) {
-		arr[i] = i;
-	}
+	cout << *ip2;
 
-	for (int i = 0; i < 10; i++) {
-		cout<<arr[i]<<" ";
-	}
-	
+	cout << endl;
 	system("pause");
 	return 0;
 }
